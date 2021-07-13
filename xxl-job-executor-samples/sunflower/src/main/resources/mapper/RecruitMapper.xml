@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sunflower.project.dao.RecruitMapper">
+  <resultMap id="BaseResultMap" type="com.sunflower.project.model.Recruit">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="contact" jdbcType="VARCHAR" property="contact" />
+    <result column="apply_for" jdbcType="VARCHAR" property="applyFor" />
+    <result column="former_company" jdbcType="VARCHAR" property="formerCompany" />
+    <result column="gender" jdbcType="VARCHAR" property="gender" />
+    <result column="age" jdbcType="INTEGER" property="age" />
+  </resultMap>
+</mapper>

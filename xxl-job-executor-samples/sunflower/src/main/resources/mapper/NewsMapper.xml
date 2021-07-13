@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sunflower.project.dao.NewsMapper">
+  <resultMap id="BaseResultMap" type="com.sunflower.project.model.News">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="subtitle" jdbcType="VARCHAR" property="subtitle" />
+    <result column="author" jdbcType="VARCHAR" property="author" />
+    <result column="content" jdbcType="VARCHAR" property="content" />
+  </resultMap>
+  <select id="findNextById" parameterType="int" resultMap="BaseResultMap">
+    	select * from news where id =(SELECT min(id) FROM news WHERE id &gt; #{id});
+   </select>
+  <select id="findBeforeById" parameterType="int" resultMap="BaseResultMap">
+    	select * from news where id =(SELECT max(id) FROM news WHERE  id <![CDATA[ < ]]> #{id});
+   </select>
+</mapper>
