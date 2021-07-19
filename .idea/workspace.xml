@@ -16,27 +16,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27f6e29b-9c8c-4e42-a30a-867866b5e7be" name="Default Changelist" comment="init">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_20.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xxl-job-executor-samples/ssm/src/main/java/com/demo/ssm/config/DataSourceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xxl-job-executor-samples/ssm/src/main/java/com/demo/ssm/controller/TestTaskJobController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xxl-job-executor-samples/ssm/src/main/java/com/demo/ssm/entity/EmailInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xxl-job-executor-samples/ssm/src/main/java/com/demo/ssm/factory/AllDataSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xxl-job-executor-samples/ssm/src/main/java/com/demo/ssm/factory/DataSourceFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xxl-job-executor-samples/ssm/src/main/java/com/demo/ssm/util/EmailUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xxl-job-executor-samples/ssm/src/main/java/com/demo/ssm/util/SftpUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xxl-job-executor-samples/ssm/src/main/java/com/demo/ssm/xxlJob/AutoTaskSendEmail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-executor-samples/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/ssm/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-executor-samples/ssm/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/ssm/src/main/java/com/demo/ssm/util/PublicUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-executor-samples/ssm/src/main/java/com/demo/ssm/util/PublicUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/ssm/src/main/resources/JDBC.properties" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-executor-samples/ssm/src/main/resources/JDBC.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/ssm/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-executor-samples/ssm/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/target/xxl-job-executor-sample-springboot-2.3.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/target/xxl-job-executor-sample-springboot-2.3.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/target/xxl-job-executor-sample-springboot-2.3.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/target/xxl-job-executor-sample-springboot-2.3.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-admin/target/xxl-job-admin-2.3.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/target/xxl-job-admin-2.3.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-admin/target/xxl-job-admin-2.3.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/target/xxl-job-admin-2.3.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-core/target/xxl-job-core-2.3.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-core/target/xxl-job-core-2.3.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/ssm/src/main/java/com/demo/ssm/SsmApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-executor-samples/ssm/src/main/java/com/demo/ssm/SsmApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/ssm/src/main/java/com/demo/ssm/xxlJob/AutoTaskSendEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-executor-samples/ssm/src/main/java/com/demo/ssm/xxlJob/AutoTaskSendEmail.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,7 +221,7 @@
       <workItem from="1625208700757" duration="12725000" />
       <workItem from="1626072242501" duration="5180000" />
       <workItem from="1626145342758" duration="15881000" />
-      <workItem from="1626340381932" duration="12598000" />
+      <workItem from="1626340381932" duration="16197000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1626088759756</created>
@@ -252,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626174644959</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="init">
+      <created>1626427987653</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1626427987653</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,10 +271,10 @@
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state x="320" y="125" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.875@0.25.1440.875" timestamp="1626339225098" />
-    <state x="533" y="149" key="#com.intellij.ide.util.MemberChooser" timestamp="1626344704345">
+    <state x="533" y="149" key="#com.intellij.ide.util.MemberChooser" timestamp="1626689851554">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="533" y="149" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1626344704345" />
+    <state x="533" y="149" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1626689851554" />
     <state x="533" y="170" key="#com.intellij.ide.util.MemberChooser/0.25.1440.875@0.25.1440.875" timestamp="1626339382053" />
     <state x="483" y="71" key="#xdebugger.evaluate" timestamp="1626347180458">
       <screen x="0" y="0" width="1440" height="900" />
@@ -296,25 +288,25 @@
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state x="100" y="125" width="1240" height="675" key="DiffContextDialog/0.25.1440.875@0.25.1440.875" timestamp="1626332397887" />
-    <state width="1398" height="221" key="GridCell.Tab.0.bottom" timestamp="1626425278018">
+    <state width="1398" height="221" key="GridCell.Tab.0.bottom" timestamp="1626688860286">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="221" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1626425278018" />
+    <state width="1398" height="221" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1626688860286" />
     <state width="1398" height="178" key="GridCell.Tab.0.bottom/0.25.1440.875@0.25.1440.875" timestamp="1626163113576" />
-    <state width="1398" height="221" key="GridCell.Tab.0.center" timestamp="1626425278016">
+    <state width="1398" height="221" key="GridCell.Tab.0.center" timestamp="1626688860284">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="221" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1626425278016" />
+    <state width="1398" height="221" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1626688860284" />
     <state width="1398" height="178" key="GridCell.Tab.0.center/0.25.1440.875@0.25.1440.875" timestamp="1626163113575" />
-    <state width="1398" height="221" key="GridCell.Tab.0.left" timestamp="1626425278015">
+    <state width="1398" height="221" key="GridCell.Tab.0.left" timestamp="1626688860282">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="221" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1626425278015" />
+    <state width="1398" height="221" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1626688860282" />
     <state width="1398" height="178" key="GridCell.Tab.0.left/0.25.1440.875@0.25.1440.875" timestamp="1626163113574" />
-    <state width="1398" height="221" key="GridCell.Tab.0.right" timestamp="1626425278017">
+    <state width="1398" height="221" key="GridCell.Tab.0.right" timestamp="1626688860285">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="221" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1626425278017" />
+    <state width="1398" height="221" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1626688860285" />
     <state width="1398" height="178" key="GridCell.Tab.0.right/0.25.1440.875@0.25.1440.875" timestamp="1626163113576" />
     <state width="1398" height="127" key="GridCell.Tab.1.bottom" timestamp="1626402121251">
       <screen x="0" y="0" width="1440" height="900" />
@@ -369,24 +361,24 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="159" y="76" key="VCS.ChangeListViewerDialog/0.0.1440.900@0.0.1440.900" timestamp="1626085279399" />
-    <state x="320" y="188" key="Vcs.Push.Dialog.v2" timestamp="1626174649280">
-      <screen x="0" y="25" width="1440" height="875" />
+    <state x="320" y="168" key="Vcs.Push.Dialog.v2" timestamp="1626428002663">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="168" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1626088764155" />
+    <state x="320" y="168" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1626428002663" />
     <state x="320" y="188" key="Vcs.Push.Dialog.v2/0.25.1440.875@0.25.1440.875" timestamp="1626174649280" />
     <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1625723375110">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1440.900@0.0.1440.900" timestamp="1625723375110" />
-    <state x="510" y="379" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1626332010980">
-      <screen x="0" y="25" width="1440" height="875" />
-    </state>
-    <state x="510" y="364" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1626143366432" />
-    <state x="510" y="379" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1440.875@0.25.1440.875" timestamp="1626332010980" />
-    <state x="422" y="174" width="982" height="608" key="find.popup" timestamp="1626406001228">
+    <state x="510" y="364" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1626427915483">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="422" y="174" width="982" height="608" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1626406001228" />
+    <state x="510" y="364" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1626427915483" />
+    <state x="510" y="379" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1440.875@0.25.1440.875" timestamp="1626332010980" />
+    <state x="422" y="174" width="982" height="608" key="find.popup" timestamp="1626676778956">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="422" y="174" width="982" height="608" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1626676778956" />
     <state x="182" y="219" width="982" height="592" key="find.popup/0.25.1440.875@0.25.1440.875" timestamp="1626334472833" />
     <state x="433" y="320" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1626174972437">
       <screen x="0" y="25" width="1440" height="875" />
