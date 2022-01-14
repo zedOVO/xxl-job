@@ -12,7 +12,6 @@
         <module name="sunflower" />
         <module name="xxl-job-executor-sample-springboot" />
         <module name="xxl-job-core" />
-        <module name="ssm" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
