@@ -15,11 +15,21 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27f6e29b-9c8c-4e42-a30a-867866b5e7be" name="Default Changelist" comment="init">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/db/tables_xxl_job-oracle.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="27f6e29b-9c8c-4e42-a30a-867866b5e7be" name="Default Changelist" comment="xxljob mysql转换oracle脚本及mybatis配置文件修改">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/mybatis-mapper/XxlJobGroupMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/mybatis-mapper/XxlJobGroupMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/mybatis-mapper/XxlJobLogGlueMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/mybatis-mapper/XxlJobLogGlueMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/mybatis-mapper/XxlJobLogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/mybatis-mapper/XxlJobLogMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/mybatis-mapper/XxlJobUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/mybatis-mapper/XxlJobUserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-admin/target/classes/mybatis-mapper/XxlJobGroupMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/mybatis-mapper/XxlJobGroupMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-admin/target/classes/mybatis-mapper/XxlJobLogGlueMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/mybatis-mapper/XxlJobLogGlueMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-admin/target/classes/mybatis-mapper/XxlJobLogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/mybatis-mapper/XxlJobLogMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-admin/target/classes/mybatis-mapper/XxlJobUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/mybatis-mapper/XxlJobUserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/target/xxl-job-executor-sample-springboot-2.3.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/target/xxl-job-executor-sample-springboot-2.3.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/target/xxl-job-executor-sample-springboot-2.3.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/target/xxl-job-executor-sample-springboot-2.3.1-SNAPSHOT.jar.original" afterDir="false" />
+    </list>
+    <list id="03a2168b-d143-4961-bfde-16c33f967433" name="不提交" comment="不提交的代码">
+      <change afterPath="$PROJECT_DIR$/log4j.logpath_IS_UNDEFINED" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_32.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_database_jdbc_ojdbc8_19_8_0_0.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_4_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_3_1.xml" afterDir="false" />
@@ -30,26 +40,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_9_0.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_2_4_RELEASE.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xxl-job-admin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xxl-job-admin/src/main/java/com/xxl/job/admin/core/thread/JobLogReportHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/src/main/java/com/xxl/job/admin/core/thread/JobLogReportHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/application-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/application-test.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/logback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/mybatis-mapper/XxlJobGroupMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/mybatis-mapper/XxlJobGroupMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/mybatis-mapper/XxlJobInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/mybatis-mapper/XxlJobInfoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/mybatis-mapper/XxlJobLogGlueMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/mybatis-mapper/XxlJobLogGlueMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/mybatis-mapper/XxlJobLogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/mybatis-mapper/XxlJobLogMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/mybatis-mapper/XxlJobLogReportMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/mybatis-mapper/XxlJobLogReportMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/mybatis-mapper/XxlJobRegistryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/mybatis-mapper/XxlJobRegistryMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/mybatis-mapper/XxlJobUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/mybatis-mapper/XxlJobUserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xxl-job-admin/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xxl-job-admin/target/xxl-job-admin-2.3.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/target/xxl-job-admin-2.3.1-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xxl-job-admin/target/xxl-job-admin-2.3.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/target/xxl-job-admin-2.3.1-SNAPSHOT.jar.original" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xxl-job-admin/xxl-job-admin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/xxl-job-admin.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xxl-job-core/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-core/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xxl-job-core/target/xxl-job-core-2.3.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-core/target/xxl-job-core-2.3.1-SNAPSHOT.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,6 +102,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TODO_SCOPE" value="All Places" />
     <property name="ToolWindowDebug.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -118,7 +112,7 @@
     <property name="project.structure.proportion" value="0.15429688" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="debugger.hotswap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -144,7 +138,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.XxlJobAdminApplication">
+  <component name="RunManager" selected="Spring Boot.XxlJobExecutorApplication">
     <configuration name="AutoTaskSendEmail" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.demo.ssm.xxlJob.AutoTaskSendEmail" />
       <module name="ssm" />
@@ -317,6 +311,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="27f6e29b-9c8c-4e42-a30a-867866b5e7be" name="Default Changelist" comment="" />
+      <changelist id="03a2168b-d143-4961-bfde-16c33f967433" name="不提交" comment="不提交的代码" />
       <created>1625038080733</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -333,7 +328,7 @@
       <workItem from="1635495181902" duration="283000" />
       <workItem from="1640153157714" duration="43000" />
       <workItem from="1642142232717" duration="10123000" />
-      <workItem from="1642155587601" duration="1888000" />
+      <workItem from="1642155587601" duration="6894000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1626088759756</created>
@@ -377,7 +372,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642142496787</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="xxljob mysql转换oracle脚本及mybatis配置文件修改">
+      <created>1642157522772</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1642157522772</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -397,60 +399,89 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="xxljob mysql转换oracle脚本及mybatis配置文件修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="xxljob mysql转换oracle脚本及mybatis配置文件修改" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1079" height="92" key="GridCell.Tab.0.bottom" timestamp="1642157200811">
+    <state width="475" height="618" key="DebuggerActiveHint" timestamp="1642389425882">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1079" height="92" key="GridCell.Tab.0.bottom/0.25.1440.875@0.25.1440.875" timestamp="1642157200811" />
-    <state width="1079" height="92" key="GridCell.Tab.0.center" timestamp="1642157200810">
+    <state width="475" height="618" key="DebuggerActiveHint/0.25.1440.875@0.25.1440.875" timestamp="1642389425882" />
+    <state width="1079" height="351" key="GridCell.Tab.0.bottom" timestamp="1642401660033">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1079" height="92" key="GridCell.Tab.0.center/0.25.1440.875@0.25.1440.875" timestamp="1642157200810" />
-    <state width="1079" height="92" key="GridCell.Tab.0.left" timestamp="1642157200810">
+    <state width="1079" height="351" key="GridCell.Tab.0.bottom/0.25.1440.875@0.25.1440.875" timestamp="1642401660033" />
+    <state width="1079" height="351" key="GridCell.Tab.0.center" timestamp="1642401660033">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1079" height="92" key="GridCell.Tab.0.left/0.25.1440.875@0.25.1440.875" timestamp="1642157200810" />
-    <state width="1079" height="92" key="GridCell.Tab.0.right" timestamp="1642157200810">
+    <state width="1079" height="351" key="GridCell.Tab.0.center/0.25.1440.875@0.25.1440.875" timestamp="1642401660033" />
+    <state width="1079" height="351" key="GridCell.Tab.0.left" timestamp="1642401660033">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1079" height="92" key="GridCell.Tab.0.right/0.25.1440.875@0.25.1440.875" timestamp="1642157200810" />
-    <state width="1079" height="92" key="GridCell.Tab.1.bottom" timestamp="1642157200813">
+    <state width="1079" height="351" key="GridCell.Tab.0.left/0.25.1440.875@0.25.1440.875" timestamp="1642401660033" />
+    <state width="1079" height="351" key="GridCell.Tab.0.right" timestamp="1642401660033">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1079" height="92" key="GridCell.Tab.1.bottom/0.25.1440.875@0.25.1440.875" timestamp="1642157200813" />
-    <state width="1079" height="92" key="GridCell.Tab.1.center" timestamp="1642157200812">
+    <state width="1079" height="351" key="GridCell.Tab.0.right/0.25.1440.875@0.25.1440.875" timestamp="1642401660033" />
+    <state width="1079" height="351" key="GridCell.Tab.1.bottom" timestamp="1642401660034">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1079" height="92" key="GridCell.Tab.1.center/0.25.1440.875@0.25.1440.875" timestamp="1642157200812" />
-    <state width="1079" height="92" key="GridCell.Tab.1.left" timestamp="1642157200811">
+    <state width="1079" height="351" key="GridCell.Tab.1.bottom/0.25.1440.875@0.25.1440.875" timestamp="1642401660034" />
+    <state width="1079" height="351" key="GridCell.Tab.1.center" timestamp="1642401660034">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1079" height="92" key="GridCell.Tab.1.left/0.25.1440.875@0.25.1440.875" timestamp="1642157200811" />
-    <state width="1079" height="92" key="GridCell.Tab.1.right" timestamp="1642157200812">
+    <state width="1079" height="351" key="GridCell.Tab.1.center/0.25.1440.875@0.25.1440.875" timestamp="1642401660034" />
+    <state width="1079" height="351" key="GridCell.Tab.1.left" timestamp="1642401660033">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1079" height="92" key="GridCell.Tab.1.right/0.25.1440.875@0.25.1440.875" timestamp="1642157200812" />
+    <state width="1079" height="351" key="GridCell.Tab.1.left/0.25.1440.875@0.25.1440.875" timestamp="1642401660033" />
+    <state width="1079" height="351" key="GridCell.Tab.1.right" timestamp="1642401660034">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state width="1079" height="351" key="GridCell.Tab.1.right/0.25.1440.875@0.25.1440.875" timestamp="1642401660034" />
+    <state width="1079" height="351" key="GridCell.Tab.2.bottom" timestamp="1642401660035">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state width="1079" height="351" key="GridCell.Tab.2.bottom/0.25.1440.875@0.25.1440.875" timestamp="1642401660035" />
+    <state width="1079" height="351" key="GridCell.Tab.2.center" timestamp="1642401660034">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state width="1079" height="351" key="GridCell.Tab.2.center/0.25.1440.875@0.25.1440.875" timestamp="1642401660034" />
+    <state width="1079" height="351" key="GridCell.Tab.2.left" timestamp="1642401660034">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state width="1079" height="351" key="GridCell.Tab.2.left/0.25.1440.875@0.25.1440.875" timestamp="1642401660034" />
+    <state width="1079" height="351" key="GridCell.Tab.2.right" timestamp="1642401660034">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state width="1079" height="351" key="GridCell.Tab.2.right/0.25.1440.875@0.25.1440.875" timestamp="1642401660034" />
     <state x="313" y="85" key="RollbackChangesDialog" timestamp="1642157211306">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state x="313" y="85" key="RollbackChangesDialog/0.25.1440.875@0.25.1440.875" timestamp="1642157211306" />
-    <state x="320" y="195" key="Vcs.Push.Dialog.v2" timestamp="1642142506886">
+    <state x="229" y="98" key="SettingsEditor" timestamp="1642401629903">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state x="320" y="195" key="Vcs.Push.Dialog.v2/0.25.1440.875@0.25.1440.875" timestamp="1642142506886" />
+    <state x="229" y="98" key="SettingsEditor/0.25.1440.875@0.25.1440.875" timestamp="1642401629903" />
+    <state x="501" y="373" key="VCS.ChangelistChooser" timestamp="1642157560463">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state x="501" y="373" key="VCS.ChangelistChooser/0.25.1440.875@0.25.1440.875" timestamp="1642157560463" />
+    <state x="320" y="195" key="Vcs.Push.Dialog.v2" timestamp="1642157525608">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state x="320" y="195" key="Vcs.Push.Dialog.v2/0.25.1440.875@0.25.1440.875" timestamp="1642157525608" />
     <state x="510" y="376" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1642142541576">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state x="510" y="376" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1440.875@0.25.1440.875" timestamp="1642142541576" />
-    <state x="422" y="172" width="695" height="672" key="find.popup" timestamp="1642156691809">
+    <state x="422" y="172" width="759" height="672" key="find.popup" timestamp="1642400197751">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state x="422" y="172" width="695" height="672" key="find.popup/0.25.1440.875@0.25.1440.875" timestamp="1642156691809" />
-    <state x="385" y="214" width="670" height="676" key="search.everywhere.popup" timestamp="1642155765188">
+    <state x="422" y="172" width="759" height="672" key="find.popup/0.25.1440.875@0.25.1440.875" timestamp="1642400197751" />
+    <state x="385" y="214" width="670" height="676" key="search.everywhere.popup" timestamp="1642400633616">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state x="385" y="214" width="670" height="676" key="search.everywhere.popup/0.25.1440.875@0.25.1440.875" timestamp="1642155765188" />
+    <state x="385" y="214" width="670" height="676" key="search.everywhere.popup/0.25.1440.875@0.25.1440.875" timestamp="1642400633616" />
   </component>
 </project>

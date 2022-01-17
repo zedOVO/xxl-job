@@ -36,10 +36,10 @@
 
 	<insert id="save" parameterType="com.xxl.job.admin.core.model.XxlJobGroup" useGeneratedKeys="true" keyProperty="id" >
 		<selectKey keyProperty="id" resultType="int" order="BEFORE">
-			select XXL_JOB_GROUP_ID.nexval as id from dual
+			select XXL_JOB_GROUP_ID.nextval  id from dual
 		</selectKey>
-		INSERT INTO xxl_job_group ( id,app_name, title, address_type, address_list, update_time)
-		values (#{id}, #{appname}, #{title}, #{addressType}, #{addressList}, #{updateTime} );
+		INSERT INTO xxl_job_group ( id,app_name, title,group_order, address_type, address_list, update_time)
+		values (#{id}, #{appname}, #{title},#{id}, #{addressType}, #{addressList}, #{updateTime,jdbcType=DATE} )
 	</insert>
 
 	<update id="update" parameterType="com.xxl.job.admin.core.model.XxlJobGroup" >
@@ -73,9 +73,14 @@
 			<if test="title != null and title != ''">
 				AND t.title like CONCAT(CONCAT('%', #{title}), '%')
 			</if>
+			<if test="pagesize gt -1">
+				AND rownum <![CDATA[ <= ]]> #{pagesize}
+			</if>
+			<if test="offset != '' and offset != null">
+				AND rownum <![CDATA[ >= ]]> #{offset}
+			</if>
 		</trim>
 		ORDER BY t.app_name, t.title, t.id ASC
-		LIMIT #{offset}, #{pagesize}
 	</select>
 
 	<select id="pageListCount" parameterType="java.util.HashMap" resultType="int">

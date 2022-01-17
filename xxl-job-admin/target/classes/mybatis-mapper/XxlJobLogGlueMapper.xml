@@ -25,7 +25,7 @@
 	
 	<insert id="save" parameterType="com.xxl.job.admin.core.model.XxlJobLogGlue" useGeneratedKeys="true" keyProperty="id" >
 		<selectKey keyProperty="id" resultType="int" order="BEFORE">
-			select XXL_JOB_LOGGLUE_ID.nextval as id from dual
+			select XXL_JOB_LOGGLUE_ID.nextval  id from dual
 		</selectKey>
 		INSERT INTO xxl_job_logglue (
 			job_id,
@@ -49,7 +49,7 @@
 	
 	<select id="findByJobId" parameterType="java.lang.Integer" resultMap="XxlJobLogGlue">
 		SELECT <include refid="Base_Column_List" />
-		FROM xxl_job_logglue AS t
+		FROM xxl_job_logglue  t
 		WHERE t.job_id = #{jobId}
 		ORDER BY id DESC
 	</select>
@@ -60,8 +60,9 @@
 			SELECT id FROM(
 				SELECT id FROM xxl_job_logglue
 				WHERE job_id = #{jobId}
+				  AND rownum <![CDATA[ <= ]]> #{limit}
+				  AND rownum <![CDATA[ >= ]]> 0
 				ORDER BY update_time desc
-				LIMIT 0, #{limit}
 			) t1
 		) AND job_id = #{jobId}
 	</delete>
