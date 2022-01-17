@@ -120,6 +120,8 @@ public class XxlJobTrigger {
         jobLog.setJobGroup(jobInfo.getJobGroup());
         jobLog.setJobId(jobInfo.getId());
         jobLog.setTriggerTime(new Date());
+        // 无需告警
+        jobLog.setAlarmStatus(1);
         XxlJobAdminConfig.getAdminConfig().getXxlJobLogDao().save(jobLog);
         logger.debug(">>>>>>>>>>> xxl-job trigger start, jobId:{}", jobLog.getId());
 

@@ -17,14 +17,15 @@
   <component name="ChangeListManager">
     <list default="true" id="27f6e29b-9c8c-4e42-a30a-867866b5e7be" name="Default Changelist" comment="xxljob mysql转换oracle脚本及mybatis配置文件修改">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/mybatis-mapper/XxlJobGroupMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/mybatis-mapper/XxlJobGroupMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-admin/src/main/java/com/xxl/job/admin/core/trigger/XxlJobTrigger.java" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/src/main/java/com/xxl/job/admin/core/trigger/XxlJobTrigger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/application-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/application-test.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/mybatis-mapper/XxlJobInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/mybatis-mapper/XxlJobInfoMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/mybatis-mapper/XxlJobLogGlueMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/mybatis-mapper/XxlJobLogGlueMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/mybatis-mapper/XxlJobLogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/mybatis-mapper/XxlJobLogMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/mybatis-mapper/XxlJobUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/mybatis-mapper/XxlJobUserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xxl-job-admin/target/classes/mybatis-mapper/XxlJobGroupMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/mybatis-mapper/XxlJobGroupMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xxl-job-admin/target/classes/mybatis-mapper/XxlJobLogGlueMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/mybatis-mapper/XxlJobLogGlueMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xxl-job-admin/target/classes/mybatis-mapper/XxlJobLogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/mybatis-mapper/XxlJobLogMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xxl-job-admin/target/classes/mybatis-mapper/XxlJobUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/mybatis-mapper/XxlJobUserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/target/xxl-job-executor-sample-springboot-2.3.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/target/xxl-job-executor-sample-springboot-2.3.1-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/target/xxl-job-executor-sample-springboot-2.3.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/target/xxl-job-executor-sample-springboot-2.3.1-SNAPSHOT.jar.original" afterDir="false" />
     </list>
@@ -329,6 +330,7 @@
       <workItem from="1640153157714" duration="43000" />
       <workItem from="1642142232717" duration="10123000" />
       <workItem from="1642155587601" duration="6894000" />
+      <workItem from="1642401696134" duration="3054000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1626088759756</created>
@@ -379,7 +381,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642157522772</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="xxljob mysql转换oracle脚本及mybatis配置文件修改">
+      <created>1642401761283</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1642401761283</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -403,58 +412,66 @@
     <option name="LAST_COMMIT_MESSAGE" value="xxljob mysql转换oracle脚本及mybatis配置文件修改" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="475" height="618" key="DebuggerActiveHint" timestamp="1642389425882">
+    <state x="485" y="174" key="#New_Docker_Connection" timestamp="1642402187617">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="475" height="618" key="DebuggerActiveHint/0.25.1440.875@0.25.1440.875" timestamp="1642389425882" />
-    <state width="1079" height="351" key="GridCell.Tab.0.bottom" timestamp="1642401660033">
+    <state x="485" y="174" key="#New_Docker_Connection/0.25.1440.875@0.25.1440.875" timestamp="1642402187617" />
+    <state x="341" y="25" key="#SsmApplication" timestamp="1642402166628">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1079" height="351" key="GridCell.Tab.0.bottom/0.25.1440.875@0.25.1440.875" timestamp="1642401660033" />
-    <state width="1079" height="351" key="GridCell.Tab.0.center" timestamp="1642401660033">
+    <state x="341" y="25" key="#SsmApplication/0.25.1440.875@0.25.1440.875" timestamp="1642402166628" />
+    <state width="475" height="618" key="DebuggerActiveHint" timestamp="1642403783174">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1079" height="351" key="GridCell.Tab.0.center/0.25.1440.875@0.25.1440.875" timestamp="1642401660033" />
-    <state width="1079" height="351" key="GridCell.Tab.0.left" timestamp="1642401660033">
+    <state width="475" height="618" key="DebuggerActiveHint/0.25.1440.875@0.25.1440.875" timestamp="1642403783174" />
+    <state width="1079" height="180" key="GridCell.Tab.0.bottom" timestamp="1642405310233">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1079" height="351" key="GridCell.Tab.0.left/0.25.1440.875@0.25.1440.875" timestamp="1642401660033" />
-    <state width="1079" height="351" key="GridCell.Tab.0.right" timestamp="1642401660033">
+    <state width="1079" height="180" key="GridCell.Tab.0.bottom/0.25.1440.875@0.25.1440.875" timestamp="1642405310233" />
+    <state width="1079" height="180" key="GridCell.Tab.0.center" timestamp="1642405310225">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1079" height="351" key="GridCell.Tab.0.right/0.25.1440.875@0.25.1440.875" timestamp="1642401660033" />
-    <state width="1079" height="351" key="GridCell.Tab.1.bottom" timestamp="1642401660034">
+    <state width="1079" height="180" key="GridCell.Tab.0.center/0.25.1440.875@0.25.1440.875" timestamp="1642405310225" />
+    <state width="1079" height="180" key="GridCell.Tab.0.left" timestamp="1642405310225">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1079" height="351" key="GridCell.Tab.1.bottom/0.25.1440.875@0.25.1440.875" timestamp="1642401660034" />
-    <state width="1079" height="351" key="GridCell.Tab.1.center" timestamp="1642401660034">
+    <state width="1079" height="180" key="GridCell.Tab.0.left/0.25.1440.875@0.25.1440.875" timestamp="1642405310225" />
+    <state width="1079" height="180" key="GridCell.Tab.0.right" timestamp="1642405310232">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1079" height="351" key="GridCell.Tab.1.center/0.25.1440.875@0.25.1440.875" timestamp="1642401660034" />
-    <state width="1079" height="351" key="GridCell.Tab.1.left" timestamp="1642401660033">
+    <state width="1079" height="180" key="GridCell.Tab.0.right/0.25.1440.875@0.25.1440.875" timestamp="1642405310232" />
+    <state width="1079" height="180" key="GridCell.Tab.1.bottom" timestamp="1642405310235">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1079" height="351" key="GridCell.Tab.1.left/0.25.1440.875@0.25.1440.875" timestamp="1642401660033" />
-    <state width="1079" height="351" key="GridCell.Tab.1.right" timestamp="1642401660034">
+    <state width="1079" height="180" key="GridCell.Tab.1.bottom/0.25.1440.875@0.25.1440.875" timestamp="1642405310235" />
+    <state width="1079" height="180" key="GridCell.Tab.1.center" timestamp="1642405310234">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1079" height="351" key="GridCell.Tab.1.right/0.25.1440.875@0.25.1440.875" timestamp="1642401660034" />
-    <state width="1079" height="351" key="GridCell.Tab.2.bottom" timestamp="1642401660035">
+    <state width="1079" height="180" key="GridCell.Tab.1.center/0.25.1440.875@0.25.1440.875" timestamp="1642405310234" />
+    <state width="1079" height="180" key="GridCell.Tab.1.left" timestamp="1642405310233">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1079" height="351" key="GridCell.Tab.2.bottom/0.25.1440.875@0.25.1440.875" timestamp="1642401660035" />
-    <state width="1079" height="351" key="GridCell.Tab.2.center" timestamp="1642401660034">
+    <state width="1079" height="180" key="GridCell.Tab.1.left/0.25.1440.875@0.25.1440.875" timestamp="1642405310233" />
+    <state width="1079" height="180" key="GridCell.Tab.1.right" timestamp="1642405310234">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1079" height="351" key="GridCell.Tab.2.center/0.25.1440.875@0.25.1440.875" timestamp="1642401660034" />
-    <state width="1079" height="351" key="GridCell.Tab.2.left" timestamp="1642401660034">
+    <state width="1079" height="180" key="GridCell.Tab.1.right/0.25.1440.875@0.25.1440.875" timestamp="1642405310234" />
+    <state width="1079" height="180" key="GridCell.Tab.2.bottom" timestamp="1642405310236">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1079" height="351" key="GridCell.Tab.2.left/0.25.1440.875@0.25.1440.875" timestamp="1642401660034" />
-    <state width="1079" height="351" key="GridCell.Tab.2.right" timestamp="1642401660034">
+    <state width="1079" height="180" key="GridCell.Tab.2.bottom/0.25.1440.875@0.25.1440.875" timestamp="1642405310236" />
+    <state width="1079" height="180" key="GridCell.Tab.2.center" timestamp="1642405310235">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1079" height="351" key="GridCell.Tab.2.right/0.25.1440.875@0.25.1440.875" timestamp="1642401660034" />
+    <state width="1079" height="180" key="GridCell.Tab.2.center/0.25.1440.875@0.25.1440.875" timestamp="1642405310235" />
+    <state width="1079" height="180" key="GridCell.Tab.2.left" timestamp="1642405310235">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state width="1079" height="180" key="GridCell.Tab.2.left/0.25.1440.875@0.25.1440.875" timestamp="1642405310235" />
+    <state width="1079" height="180" key="GridCell.Tab.2.right" timestamp="1642405310236">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state width="1079" height="180" key="GridCell.Tab.2.right/0.25.1440.875@0.25.1440.875" timestamp="1642405310236" />
     <state x="313" y="85" key="RollbackChangesDialog" timestamp="1642157211306">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
@@ -467,21 +484,41 @@
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state x="501" y="373" key="VCS.ChangelistChooser/0.25.1440.875@0.25.1440.875" timestamp="1642157560463" />
-    <state x="320" y="195" key="Vcs.Push.Dialog.v2" timestamp="1642157525608">
+    <state x="320" y="195" key="Vcs.Push.Dialog.v2" timestamp="1642401764304">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state x="320" y="195" key="Vcs.Push.Dialog.v2/0.25.1440.875@0.25.1440.875" timestamp="1642157525608" />
+    <state x="320" y="195" key="Vcs.Push.Dialog.v2/0.25.1440.875@0.25.1440.875" timestamp="1642401764304" />
     <state x="510" y="376" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1642142541576">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state x="510" y="376" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1440.875@0.25.1440.875" timestamp="1642142541576" />
-    <state x="422" y="172" width="759" height="672" key="find.popup" timestamp="1642400197751">
+    <state x="422" y="172" width="759" height="672" key="find.popup" timestamp="1642405403199">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state x="422" y="172" width="759" height="672" key="find.popup/0.25.1440.875@0.25.1440.875" timestamp="1642400197751" />
-    <state x="385" y="214" width="670" height="676" key="search.everywhere.popup" timestamp="1642400633616">
+    <state x="422" y="172" width="759" height="672" key="find.popup/0.25.1440.875@0.25.1440.875" timestamp="1642405403199" />
+    <state x="385" y="214" width="670" height="676" key="search.everywhere.popup" timestamp="1642405410450">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state x="385" y="214" width="670" height="676" key="search.everywhere.popup/0.25.1440.875@0.25.1440.875" timestamp="1642400633616" />
+    <state x="385" y="214" width="670" height="676" key="search.everywhere.popup/0.25.1440.875@0.25.1440.875" timestamp="1642405410450" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo typeName="com.xxl.job.admin.core.model.XxlJobLog" fieldName="jobGroup" />
+        <PinnedItemInfo typeName="com.xxl.job.admin.core.model.XxlJobLog" fieldName="executorFailRetryCount" />
+        <PinnedItemInfo typeName="com.xxl.job.admin.core.model.XxlJobLog" fieldName="id" />
+        <PinnedItemInfo typeName="com.xxl.job.admin.core.model.XxlJobLog" fieldName="handleMsg" />
+        <PinnedItemInfo typeName="com.xxl.job.admin.core.model.XxlJobLog" fieldName="triggerTime" />
+        <PinnedItemInfo typeName="com.xxl.job.admin.core.model.XxlJobLog" fieldName="triggerMsg" />
+        <PinnedItemInfo typeName="com.xxl.job.admin.core.model.XxlJobLog" fieldName="executorParam" />
+        <PinnedItemInfo typeName="com.xxl.job.admin.core.model.XxlJobLog" fieldName="handleTime" />
+        <PinnedItemInfo typeName="com.xxl.job.admin.core.model.XxlJobLog" fieldName="alarmStatus" />
+        <PinnedItemInfo typeName="com.xxl.job.admin.core.model.XxlJobLog" fieldName="jobId" />
+        <PinnedItemInfo typeName="com.xxl.job.admin.core.model.XxlJobLog" fieldName="triggerCode" />
+        <PinnedItemInfo typeName="com.xxl.job.admin.core.model.XxlJobLog" fieldName="executorHandler" />
+        <PinnedItemInfo typeName="com.xxl.job.admin.core.model.XxlJobLog" fieldName="executorShardingParam" />
+        <PinnedItemInfo typeName="com.xxl.job.admin.core.model.XxlJobLog" fieldName="executorAddress" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

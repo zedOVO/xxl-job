@@ -128,15 +128,17 @@
 			job_id,
 			trigger_time,
 			trigger_code,
-			handle_code
+			handle_code,
+			ALARM_STATUS
 		) VALUES (
 			#{id},
 			#{jobGroup},
 			#{jobId},
 			#{triggerTime},
 			#{triggerCode},
-			#{handleCode}
-		);
+			#{handleCode},
+		    #{alarmStatus}
+		)
 		<!--<selectKey resultType="java.lang.Integer" order="AFTER" keyProperty="id">
 			SELECT LAST_INSERT_ID() 
 		</selectKey>-->
@@ -151,7 +153,7 @@
 			executor_address= #{executorAddress},
 			executor_handler=#{executorHandler},
 			executor_param= #{executorParam},
-			executor_sharding_param= #{executorShardingParam},
+			executor_sharding_param= #{executorShardingParam,jdbcType=VARCHAR},
 			executor_fail_retry_count= #{executorFailRetryCount}
 		WHERE id= #{id}
 	</update>
