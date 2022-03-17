@@ -1,8 +1,10 @@
 package com.sunflower.project.util;
 
+import com.sunflower.project.model.EmailInfo;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
@@ -10,26 +12,29 @@ import java.util.*;
 
 @Component
 public class EmailUtil {
-    public Session session = null;
+    private Session session = null;
 
     @Value("${EmailUtil.sendMail}")
-    public String sendMail;
+    private String sendMail;
 
     @Value("${EmailUtil.sendMailPass}")
-    public String pass;
+    private String pass;
 
     @Value("${EmailUtil.sendName}")
-    public String sendName;
+    private String sendName;
 
 
     @Value("${EmailUtil.AuthCode}")
-    public String authCode;
+    private String authCode;
 
     public EmailUtil(){
         init();
     }
 
-    public void init() {
+
+    //构建Bean对象的默认构造方法
+    @PostConstruct
+    private void init() {
         if(session == null){
             session = Session.getInstance(initSetting(), new Authenticator() {
                 //一般SMTP都需要授权码
@@ -120,5 +125,16 @@ public class EmailUtil {
         //使用 STARTTLS安全连接
         pro.put("mail.smtp.starttls.enable","true");
         return pro;
+    }
+
+
+    /**
+     * 批量发送邮件
+     * @param emailInfos 所有待发送邮件信息
+     */
+    public void sendBatch(List<EmailInfo> emailInfos){
+        for (EmailInfo info : emailInfos){
+            send(info.getRecAddress(),info.getContent(),info.getTitle());
+        }
     }
 }

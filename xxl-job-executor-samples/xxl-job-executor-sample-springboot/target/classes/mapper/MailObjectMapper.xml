@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xxl.job.executor.mvc.dao.MailObjectDao">
+
+	<resultMap id="MailObject" type="com.xxl.job.executor.mvc.pojo.MailObject" >
+		<result column="title" property="title"  />
+		<result column="body" property="body" />
+		<result column="rcv_address" property="rcvAddress" />
+		<result column="send_time" property="sendTime" />
+		<result column="send_flag" property="sendFlag" />
+		<result column="exception_info" property="exceptionInfo" />
+		<result column="pre_send_date" property="preSendDate" />
+	</resultMap>
+
+	<select id="query" resultMap="MailObject">
+		select id,title, body, rcv_address, to_date(send_time,'yyyymmddhh24miss') send_time, send_flag,exception_info,pre_send_date
+		from xxl_send_mail_info where send_flag = 'false'
+	</select>
+
+	<insert parameterMap="MailObject" id="addPreMail" useGeneratedKeys="true" keyProperty="id">
+		<selectKey keyProperty="id" order="BEFORE">
+			select xxl_send_mail_info_id.nextval from dual
+		</selectKey>
+		insert into xxl_send_mail_info(id,title,body,rcv_address,pre_send_date)
+		values(#{id},#{title},#{body},#{rcvAddress},#{preSendDate})
+	</insert>
+
+</mapper>

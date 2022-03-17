@@ -5,9 +5,9 @@ create table XXL_JOB_GROUP
     APP_NAME      VARCHAR2(150) not null,
     TITLE         VARCHAR2(50) not null,
     GROUP_ORDER   NUMBER not null,
-    ADDRESS_TYPE  NUMBER not null,
+    ADDRESS_TYPE  NUMBER default '0' not null,
     ADDRESS_LIST  VARCHAR2(2000),
-    UPDATE_TIME   DATE
+    UPDATE_TIME   DATE default null
 );
 comment on table XXL_JOB_GROUP
     is '执行器信息表';
@@ -36,21 +36,21 @@ create table XXL_JOB_INFO
     JOB_GROUP                 NUMBER not null,
     JOB_CRON                  VARCHAR2(50),
     JOB_DESC                  VARCHAR2(500) not null,
-    ADD_TIME                  DATE,
-    UPDATE_TIME               DATE,
-    AUTHOR                    VARCHAR2(500),
-    ALARM_EMAIL               VARCHAR2(500),
-    EXECUTOR_ROUTE_STRATEGY   VARCHAR2(150),
-    EXECUTOR_HANDLER          VARCHAR2(500),
-    EXECUTOR_PARAM            VARCHAR2(1000),
-    EXECUTOR_BLOCK_STRATEGY   VARCHAR2(150),
-    EXECUTOR_TIMEOUT          NUMBER not null,
-    EXECUTOR_FAIL_RETRY_COUNT NUMBER not null,
+    ADD_TIME                  DATE default null,
+    UPDATE_TIME               DATE default null,
+    AUTHOR                    VARCHAR2(500) default null,
+    ALARM_EMAIL               VARCHAR2(500) default null,
+    EXECUTOR_ROUTE_STRATEGY   VARCHAR2(150) default null,
+    EXECUTOR_HANDLER          VARCHAR2(500) default null,
+    EXECUTOR_PARAM            VARCHAR2(1000) default null,
+    EXECUTOR_BLOCK_STRATEGY   VARCHAR2(150) default null,
+    EXECUTOR_TIMEOUT          NUMBER default '0' not null,
+    EXECUTOR_FAIL_RETRY_COUNT NUMBER default '0' not null,
     GLUE_TYPE                 VARCHAR2(150) not null,
     GLUE_SOURCE               CLOB,
-    GLUE_REMARK               VARCHAR2(128),
-    GLUE_UPDATETIME           DATE,
-    CHILD_JOBID               VARCHAR2(500),
+    GLUE_REMARK               VARCHAR2(128) default null,
+    GLUE_UPDATETIME           DATE default null,
+    CHILD_JOBID               VARCHAR2(500) default null,
     TRIGGER_STATUS            NUMBER  default (0) ,
     TRIGGER_LAST_TIME         NUMBER default (0),
     TRIGGER_NEXT_TIME         NUMBER default (0),
@@ -132,18 +132,18 @@ create table XXL_JOB_LOG
     ID                        NUMBER not null,
     JOB_GROUP                 NUMBER not null,
     JOB_ID                    NUMBER not null,
-    EXECUTOR_ADDRESS          VARCHAR2(500),
-    EXECUTOR_HANDLER          VARCHAR2(500),
-    EXECUTOR_PARAM            VARCHAR2(1000),
-    EXECUTOR_SHARDING_PARAM   VARCHAR2(50),
-    EXECUTOR_FAIL_RETRY_COUNT NUMBER not null,
-    TRIGGER_TIME              DATE,
+    EXECUTOR_ADDRESS          VARCHAR2(500) default null,
+    EXECUTOR_HANDLER          VARCHAR2(500) default null,
+    EXECUTOR_PARAM            VARCHAR2(1000) default null,
+    EXECUTOR_SHARDING_PARAM   VARCHAR2(50) default null,
+    EXECUTOR_FAIL_RETRY_COUNT NUMBER default (0),
+    TRIGGER_TIME              DATE default null,
     TRIGGER_CODE              NUMBER not null,
     TRIGGER_MSG               CLOB,
-    HANDLE_TIME               DATE,
+    HANDLE_TIME               DATE default null,
     HANDLE_CODE               NUMBER not null,
     HANDLE_MSG                CLOB,
-    ALARM_STATUS              NUMBER not null
+    ALARM_STATUS              NUMBER default '0' not null
 ) ;
 comment on table XXL_JOB_LOG
     is '任务日志信息';
@@ -190,11 +190,11 @@ create table XXL_JOB_LOGGLUE
 (
     ID          NUMBER not null,
     JOB_ID      NUMBER not null,
-    GLUE_TYPE   VARCHAR2(150),
+    GLUE_TYPE   VARCHAR2(150) default null,
     GLUE_SOURCE CLOB,
     GLUE_REMARK VARCHAR2(256) not null,
-    ADD_TIME    DATE,
-    UPDATE_TIME DATE
+    ADD_TIME    DATE default null,
+    UPDATE_TIME DATE default null
 ) ;
 comment on table XXL_JOB_LOGGLUE
     is '任务GLUE日志';
@@ -219,11 +219,11 @@ drop table XXL_JOB_LOG_REPORT;
 create table XXL_JOB_LOG_REPORT
 (
     ID            NUMBER(11) not null,
-    TRIGGER_DAY   DATE,
-    RUNNING_COUNT NUMBER(11) not null,
-    SUC_COUNT     NUMBER(11) not null,
-    FAIL_COUNT    NUMBER(11) not null,
-    UPDATE_TIME   DATE
+    TRIGGER_DAY   DATE default null,
+    RUNNING_COUNT NUMBER(11) default '0' not null,
+    SUC_COUNT     NUMBER(11)  default '0' not null,
+    FAIL_COUNT    NUMBER(11) default '0' not null,
+    UPDATE_TIME   DATE default null
 ) ;
 comment on table XXL_JOB_LOG_REPORT
     is '日志报表';
@@ -248,7 +248,7 @@ create table XXL_JOB_REGISTRY
     REGISTRY_GROUP VARCHAR2(500) not null,
     REGISTRY_KEY   VARCHAR2(500) not null,
     REGISTRY_VALUE VARCHAR2(500) not null,
-    UPDATE_TIME    DATE
+    UPDATE_TIME    DATE default null
 ) ;
 comment on table XXL_JOB_REGISTRY
     is '执行器注册表';
@@ -274,7 +274,7 @@ create table XXL_JOB_USER
     USERNAME   VARCHAR2(150) not null,
     PASSWORD   VARCHAR2(150) not null,
     ROLE       NUMBER not null,
-    PERMISSION VARCHAR2(500)
+    PERMISSION VARCHAR2(500) default null
 ) ;
 comment on table XXL_JOB_USER
     is '登录用户信息';
@@ -359,4 +359,6 @@ INSERT INTO xxl_job_group(id, app_name, title, GROUP_ORDER, address_type, addres
 INSERT INTO xxl_job_info(id, job_group, job_cron, job_desc, add_time, update_time, author, alarm_email, executor_route_strategy, executor_handler, executor_param, executor_block_strategy, executor_timeout, executor_fail_retry_count, glue_type, glue_source, glue_remark, glue_updatetime, child_jobid) VALUES (1, 1, '0 0 0 * * ? *', '测试任务1', to_date('20181103222131','yyyymmddhh24miss'), to_date('20181103222131','yyyymmddhh24miss'), 'XXL', '', 'FIRST', 'demoJobHandler', '', 'SERIAL_EXECUTION', 0, 0, 'BEAN', '', 'GLUE代码初始化', to_date('20181103222131','yyyymmddhh24miss'), '');
 INSERT INTO xxl_job_user(id, username, password, role, permission) VALUES (1, 'admin', 'e10adc3949ba59abbe56e057f20f883e', 1, NULL);
 INSERT INTO xxl_job_lock ( lock_name) VALUES ( 'schedule_lock');
+
+select * from xxl_job_user;
 

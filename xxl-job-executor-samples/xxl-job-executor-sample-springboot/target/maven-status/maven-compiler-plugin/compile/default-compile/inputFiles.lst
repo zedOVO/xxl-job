@@ -1,4 +1,11 @@
 /Volumes/mojave/Users/zed/Java/Project/IdeaWorkSpace/xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/java/com/xxl/job/executor/service/jobhandler/SampleXxlJob.java
+/Volumes/mojave/Users/zed/Java/Project/IdeaWorkSpace/xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/java/com/xxl/job/executor/mvc/controller/MailObjectController.java
+/Volumes/mojave/Users/zed/Java/Project/IdeaWorkSpace/xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/java/com/xxl/job/executor/mvc/dao/MailObjectDao.java
+/Volumes/mojave/Users/zed/Java/Project/IdeaWorkSpace/xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/java/com/xxl/job/executor/mvc/pojo/MailObject.java
 /Volumes/mojave/Users/zed/Java/Project/IdeaWorkSpace/xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/java/com/xxl/job/executor/XxlJobExecutorApplication.java
 /Volumes/mojave/Users/zed/Java/Project/IdeaWorkSpace/xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/java/com/xxl/job/executor/core/config/XxlJobConfig.java
 /Volumes/mojave/Users/zed/Java/Project/IdeaWorkSpace/xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/java/com/xxl/job/executor/mvc/controller/IndexController.java
+/Volumes/mojave/Users/zed/Java/Project/IdeaWorkSpace/xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/java/com/xxl/job/executor/core/config/MybatisConfig.java
+/Volumes/mojave/Users/zed/Java/Project/IdeaWorkSpace/xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/java/com/xxl/job/executor/service/jobhandler/SendMailJob.java
+/Volumes/mojave/Users/zed/Java/Project/IdeaWorkSpace/xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/java/com/test/HashTest.java
+/Volumes/mojave/Users/zed/Java/Project/IdeaWorkSpace/xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/java/com/xxl/job/executor/mvc/controller/TestObjectController.java

@@ -1,6 +1,9 @@
 package com.sunflower.testClass.test01;
 
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * 构造器和构造方法的区别
  */
@@ -39,9 +42,9 @@ public class ConstractThink {
     }
 
     public static void main(String[] args) {
-        ConstractThink ct  = new ConstractThink(    "1");
-        String s = ct.getKey("");
-        System.out.println(s);
+//        ConstractThink ct  = new ConstractThink(    "1");
+//        String s = ct.getKey("");
+//        System.out.println(s);
     }
 
 

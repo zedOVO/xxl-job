@@ -16,23 +16,21 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.web.method.HandlerMethod;
-import org.springframework.web.servlet.HandlerExceptionResolver;
-import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.NoHandlerFoundException;
+import org.springframework.web.servlet.*;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
+import org.springframework.web.servlet.config.annotation.ViewResolverRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
+import org.springframework.web.servlet.view.InternalResourceView;
+import org.springframework.web.servlet.view.json.MappingJackson2JsonView;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.nio.charset.Charset;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 /**
  * Spring MVC 配置
@@ -65,7 +63,7 @@ public class WebMvcConfigurer extends WebMvcConfigurerAdapter {
     @Override
     public void configureHandlerExceptionResolvers(List<HandlerExceptionResolver> exceptionResolvers) {
         exceptionResolvers.add(new HandlerExceptionResolver() {
-            public ModelAndView resolveException(HttpServletRequest request, HttpServletResponse response, Object handler, Exception e) {
+                public ModelAndView resolveException(HttpServletRequest request, HttpServletResponse response, Object handler, Exception e) {
                 Result result = new Result();
                 if (e instanceof ServiceException) {//业务失败的异常，如“账号或密码错误”
                     result.setCode(ResultCode.FAIL).setMessage(e.getMessage());
@@ -190,5 +188,27 @@ public class WebMvcConfigurer extends WebMvcConfigurerAdapter {
         }
 
         return ip;
+    }
+
+    /**
+     * 配置视图解析器
+     * @param registry 解析器注册
+     */
+    @Override
+    public void configureViewResolvers(ViewResolverRegistry registry) {
+        registry.viewResolver(new ViewResolver() {
+            @Override
+            public View resolveViewName(String viewName, Locale locale) throws Exception {
+                View view = null;
+                if (viewName.equals("success")){
+                    view = new InternalResourceView("/static/view/success.jsp");
+                }else{
+                    view = new InternalResourceView("/static/view/other.jsp");
+                }
+                return view;
+            }
+        });
+//        registry.jsp("/static/view/",".jsp");
+//        registry.enableContentNegotiation(new MappingJackson2JsonView());
     }
 }

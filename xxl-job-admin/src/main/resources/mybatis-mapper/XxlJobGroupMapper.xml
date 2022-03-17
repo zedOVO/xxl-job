@@ -47,7 +47,7 @@
 		SET app_name = #{appname},
 			title = #{title},
 			address_type = #{addressType},
-			address_list = #{addressList},
+			address_list = #{addressList,jdbcType=VARCHAR},
 			update_time = #{updateTime}
 		WHERE id = #{id}
 	</update>

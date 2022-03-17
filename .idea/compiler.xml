@@ -7,16 +7,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="xxl-job-admin" />
-        <module name="xxl-job-executor-sample-frameless" />
         <module name="sunflower" />
         <module name="xxl-job-executor-sample-springboot" />
+        <module name="xxl-job-executor-sample-frameless" />
         <module name="xxl-job-core" />
+        <module name="xxl-job-admin" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ssm" target="11" />
-      <module name="sunflower" target="1.8" />
+      <module name="sunflower" target="11" />
       <module name="xxl-job" target="1.8" />
       <module name="xxl-job-admin" target="1.8" />
       <module name="xxl-job-core" target="1.8" />
