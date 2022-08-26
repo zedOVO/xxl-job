@@ -21,7 +21,7 @@
 
 	<select id="pageList" parameterType="java.util.HashMap" resultMap="XxlJobUser">
 		SELECT <include refid="Base_Column_List" />
-		FROM xxl_job_user  t
+		FROM xxl_job_user AS t
 		<trim prefix="WHERE" prefixOverrides="AND | OR" >
 			<if test="username != null and username != ''">
 				AND t.username like CONCAT(CONCAT('%', #{username}), '%')
@@ -29,19 +29,14 @@
 			<if test="role gt -1">
 				AND t.role = #{role}
 			</if>
-			<if test="pagesize gt -1">
-				AND rownum <![CDATA[ <= ]]> #{pagesize}
-			</if>
-			<if test="offset != '' and offset != null">
-				AND rownum <![CDATA[ >= ]]> #{offset}
-			</if>
 		</trim>
 		ORDER BY username ASC
+		LIMIT #{offset}, #{pagesize}
 	</select>
 
 	<select id="pageListCount" parameterType="java.util.HashMap" resultType="int">
 		SELECT count(1)
-		FROM xxl_job_user  t
+		FROM xxl_job_user AS t
 		<trim prefix="WHERE" prefixOverrides="AND | OR" >
 			<if test="username != null and username != ''">
 				AND t.username like CONCAT(CONCAT('%', #{username}), '%')
@@ -54,27 +49,22 @@
 
 	<select id="loadByUserName" parameterType="java.util.HashMap" resultMap="XxlJobUser">
 		SELECT <include refid="Base_Column_List" />
-		FROM xxl_job_user  t
+		FROM xxl_job_user AS t
 		WHERE t.username = #{username}
 	</select>
 
 	<insert id="save" parameterType="com.xxl.job.admin.core.model.XxlJobUser" useGeneratedKeys="true" keyProperty="id" >
-		<selectKey keyProperty="id" resultType="int" order="BEFORE">
-			select XXL_JOB_LOG_ID.nextval  id from dual
-		</selectKey>
 		INSERT INTO xxl_job_user (
-		    id,
 			username,
 			password,
 			role,
 			permission
 		) VALUES (
-		    #{id},
 			#{username},
 			#{password},
 			#{role},
 			#{permission}
-		)
+		);
 	</insert>
 
 	<update id="update" parameterType="com.xxl.job.admin.core.model.XxlJobUser" >
@@ -84,7 +74,7 @@
 				password = #{password},
 			</if>
 			role = #{role},
-			permission = #{permission,jdbcType=VARCHAR}
+			permission = #{permission}
 		WHERE id = #{id}
 	</update>
 

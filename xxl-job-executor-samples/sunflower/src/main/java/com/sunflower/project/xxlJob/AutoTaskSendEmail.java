@@ -5,9 +5,13 @@ import com.sunflower.project.factory.DataSourceFactory;
 import com.sunflower.project.model.EmailInfo;
 import com.sunflower.project.util.EmailUtil;
 import com.sunflower.project.util.PublicVoid;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowCallbackHandler;
+import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 import java.sql.ResultSet;
@@ -29,6 +33,8 @@ public class AutoTaskSendEmail {
 
     private final String QUERY_TASK_SQL = "select tml_recAddress,tml_executeDate,tml_content,tml_title from task_email where tml_stt = '0' and tml_executeDate = ? ";
 
+    private final static Logger logger = LoggerFactory.getLogger(AutoTaskSendEmail.class);
+
     /**
      * 获取当天待执行发送邮件的信息
      * @return info
@@ -47,12 +53,13 @@ public class AutoTaskSendEmail {
                     infoList.add(info);
             }
         },pbVoid.getCurrentDate("yyyyMMdd"));
+        logger.info("查询回待跑批邮箱信息:"+infoList.toString());
         return infoList;
     }
 
 
 
-    public void excute(){
+    public void execute(){
         emailUtil.sendBatch(getEmailInfo());
     }
 }

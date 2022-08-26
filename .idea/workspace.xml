@@ -3,101 +3,338 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </select>
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="27f6e29b-9c8c-4e42-a30a-867866b5e7be" name="Default Changelist" comment="xxljob mysql转换oracle脚本及mybatis配置文件修改">
-      <change afterPath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/java/com/test/MQConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/java/com/test/MqSample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/java/com/test/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/java/com/xxl/job/executor/core/config/MybatisConfig.java" afterDir="false" />
+    <list default="true" id="b4d9b10d-eb67-4964-adeb-0606a5a2d83b" name="Changes" comment="commit .gitignore">
+      <change afterPath="$PROJECT_DIR$/.idea/xxl-job.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/ssm.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/sunflower.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/src/main/java/com/xxl/job/admin/test/Digest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/adminlte/bower_components/Ionicons/css/ionicons.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/adminlte/bower_components/Ionicons/fonts/ionicons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/adminlte/bower_components/Ionicons/fonts/ionicons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/adminlte/bower_components/Ionicons/fonts/ionicons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/adminlte/bower_components/Ionicons/fonts/ionicons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/adminlte/bower_components/PACE/pace.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/adminlte/bower_components/PACE/themes/blue/pace-theme-flash.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/adminlte/bower_components/bootstrap-daterangepicker/daterangepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/adminlte/bower_components/bootstrap-daterangepicker/daterangepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/adminlte/bower_components/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/adminlte/bower_components/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/adminlte/bower_components/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/adminlte/bower_components/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/adminlte/bower_components/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/adminlte/bower_components/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/adminlte/bower_components/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/adminlte/bower_components/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/adminlte/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/adminlte/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/adminlte/bower_components/datatables.net/js/jquery.dataTables.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/adminlte/bower_components/fastclick/fastclick.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/adminlte/bower_components/font-awesome/css/font-awesome.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/adminlte/bower_components/font-awesome/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/adminlte/bower_components/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/adminlte/bower_components/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/adminlte/bower_components/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/adminlte/bower_components/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/adminlte/bower_components/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/adminlte/bower_components/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/adminlte/bower_components/jquery-slimscroll/jquery.slimscroll.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/adminlte/bower_components/jquery/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/adminlte/bower_components/moment/moment.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/adminlte/dist/css/AdminLTE.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/adminlte/dist/css/skins/_all-skins.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/adminlte/dist/js/adminlte.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/adminlte/plugins/iCheck/icheck.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/adminlte/plugins/iCheck/square/blue.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/adminlte/plugins/iCheck/square/blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/adminlte/plugins/iCheck/square/blue@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/js/common.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/js/jobcode.index.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/js/jobgroup.index.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/js/jobinfo.index.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/js/joblog.detail.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/js/joblog.index.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/js/login.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/js/user.index.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/plugins/codemirror/addon/hint/anyword-hint.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/plugins/codemirror/addon/hint/show-hint.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/plugins/codemirror/addon/hint/show-hint.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/plugins/codemirror/lib/codemirror.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/plugins/codemirror/lib/codemirror.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/plugins/codemirror/mode/clike/clike.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/plugins/codemirror/mode/javascript/javascript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/plugins/codemirror/mode/php/php.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/plugins/codemirror/mode/powershell/powershell.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/plugins/codemirror/mode/python/python.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/plugins/codemirror/mode/shell/shell.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/plugins/cronGen/cronGen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/plugins/cronGen/cronGen_en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/plugins/echarts/echarts.common.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/plugins/jquery/jquery.cookie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/plugins/jquery/jquery.validate.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/plugins/layer/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/plugins/layer/theme/default/icon-ext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/plugins/layer/theme/default/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/plugins/layer/theme/default/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/plugins/layer/theme/default/loading-0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/plugins/layer/theme/default/loading-1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/static/plugins/layer/theme/default/loading-2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/templates/common/common.exception.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/templates/common/common.macro.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/templates/help.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/templates/index.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/templates/jobcode/jobcode.index.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/templates/jobgroup/jobgroup.index.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/templates/jobinfo/jobinfo.index.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/templates/joblog/joblog.detail.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/templates/joblog/joblog.index.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/templates/login.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/templates/user/user.index.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xxl-job-executor-samples/sunflower/src/main/java/com/sunflower/project/test/TestBuildJava.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_spring_boot_starter_1_1_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_47.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_11_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_0_9_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_4_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_0_18.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_23_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jcraft_jsch_0_1_52.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_ojdbc6_11_2_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_activation_jakarta_activation_1_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_jakarta_mail_1_6_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_core_1_6_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_1_63_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_mail_mail_1_5_0_b01.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_persistence_persistence_api_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_24.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__nz_net_ultraq_thymeleaf_thymeleaf_layout_dialect_1_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ognl_ognl_3_0_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_13_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_13_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_31.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_45.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_31.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_31.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_45.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_annotations_api_8_5_31.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_jdbc_8_5_31.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_juli_8_5_31.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_2_6_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_18_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_2_4_15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_2_5_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_3_0_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_31.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jakarta_el_3_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hdrhistogram_HdrHistogram_2_1_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_3_6_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_21_0_GA.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_7_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_7_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_latencyutils_LatencyUtils_2_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_1_10_19.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_3_6_28.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_3_6_28.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_generator_mybatis_generator_core_1_3_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_2_0_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_2_1_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_2_1_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_1_5_13_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_4_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_2_4_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_autoconfigure_2_4_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_1_5_13_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_4_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_1_5_13_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_4_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_actuator_2_4_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_freemarker_2_4_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_1_5_13_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_4_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_4_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_1_5_13_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_4_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_mail_2_4_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_1_5_13_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_4_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_1_5_13_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_1_5_13_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_4_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_1_5_13_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_4_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_1_5_13_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_4_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_1_5_13_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_4_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_17_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_3_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_17_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_3_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_17_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_3_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_3_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_17_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_3_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_17_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_3_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_17_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_3_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_17_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_3_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_17_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_3_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_17_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_3_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_17_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_3_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring4_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_17.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_27.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_3_4_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/db/tables_xxl_job-oracle.sql" beforeDir="false" afterPath="$PROJECT_DIR$/doc/db/tables_xxl_job-oracle.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/xxl-job-admin-2.3.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/xxl-job-executor-sample-springboot-2.3.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-admin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/application-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/application-test.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/logback.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/mybatis-mapper/XxlJobGroupMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/mybatis-mapper/XxlJobGroupMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/mybatis-mapper/XxlJobInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/mybatis-mapper/XxlJobInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/mybatis-mapper/XxlJobLogGlueMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/mybatis-mapper/XxlJobLogGlueMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/mybatis-mapper/XxlJobLogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/mybatis-mapper/XxlJobLogMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/mybatis-mapper/XxlJobLogReportMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/mybatis-mapper/XxlJobLogReportMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/mybatis-mapper/XxlJobRegistryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/mybatis-mapper/XxlJobRegistryMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/mybatis-mapper/XxlJobUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/mybatis-mapper/XxlJobUserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xxl-job-admin/target/classes/application-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/application-test.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xxl-job-admin/target/classes/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-admin/target/classes/i18n/message_zh_TC.properties" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/i18n/message_zh_TC.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xxl-job-admin/target/classes/mybatis-mapper/XxlJobGroupMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/mybatis-mapper/XxlJobGroupMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xxl-job-admin/target/classes/mybatis-mapper/XxlJobInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/mybatis-mapper/XxlJobInfoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-executor-samples/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-frameless/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-frameless/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-frameless/target/xxl-job-executor-sample-frameless-2.3.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-frameless/target/xxl-job-executor-sample-frameless-2.3.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/resources/logback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/target/classes/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/target/classes/logback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/target/xxl-job-executor-sample-springboot-2.3.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/target/xxl-job-executor-sample-springboot-2.3.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/target/xxl-job-executor-sample-springboot-2.3.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/target/xxl-job-executor-sample-springboot-2.3.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/xxl-job-executor-sample-springboot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/xxl-job-executor-sample-springboot.iml" afterDir="false" />
-    </list>
-    <list id="03a2168b-d143-4961-bfde-16c33f967433" name="不提交" comment="不提交的代码">
-      <change afterPath="$PROJECT_DIR$/log4j.logpath_IS_UNDEFINED" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_32.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_database_jdbc_ojdbc8_19_8_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_4_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_3_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_mail_mail_1_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_46.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_9_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_2_4_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/xxl-job-admin/target/xxl-job-admin-2.3.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/target/xxl-job-admin-2.3.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-admin/target/classes/mybatis-mapper/XxlJobLogGlueMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/mybatis-mapper/XxlJobLogGlueMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-admin/target/classes/mybatis-mapper/XxlJobLogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/mybatis-mapper/XxlJobLogMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-admin/target/classes/mybatis-mapper/XxlJobLogReportMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/mybatis-mapper/XxlJobLogReportMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-admin/target/classes/mybatis-mapper/XxlJobRegistryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/mybatis-mapper/XxlJobRegistryMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-admin/target/classes/mybatis-mapper/XxlJobUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/target/classes/mybatis-mapper/XxlJobUserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-admin/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-admin/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-admin/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-admin/target/xxl-job-admin-2.3.1-SNAPSHOT.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/xxl-job-admin/target/xxl-job-admin-2.3.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/target/xxl-job-admin-2.3.1-SNAPSHOT.jar.original" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xxl-job-admin/xxl-job-admin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/xxl-job-admin.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xxl-job-core/target/xxl-job-core-2.3.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-core/target/xxl-job-core-2.3.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-core/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-core/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-core/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-core/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-core/target/xxl-job-core-2.3.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/sunflower/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-executor-samples/sunflower/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/sunflower/src/main/java/com/sunflower/project/Controller/TestTaskJobController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-executor-samples/sunflower/src/main/java/com/sunflower/project/Controller/TestTaskJobController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/sunflower/src/main/java/com/sunflower/project/xxlJob/AutoTaskSendEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-executor-samples/sunflower/src/main/java/com/sunflower/project/xxlJob/AutoTaskSendEmail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/sunflower/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-executor-samples/sunflower/src/main/resources/application-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-frameless/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-frameless/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-frameless/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-frameless/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-frameless/target/xxl-job-executor-sample-frameless-2.3.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/java/com/test2/testMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/java/com/test2/testMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/java/com/xxl/job/executor/service/jobhandler/SendMailJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/java/com/xxl/job/executor/service/jobhandler/SendMailJob.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/target/xxl-job-executor-sample-springboot-2.3.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/target/xxl-job-executor-sample-springboot-2.3.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/target/xxl-job-executor-sample-springboot-2.3.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/xxl-job-executor-sample-springboot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/xxl-job-executor-sample-springboot.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CompilerWorkspaceConfiguration">
-    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Enum" />
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
-        <entry key="$PROJECT_DIR$/xxl-job-executor-samples/ssm" value="master" />
+        <entry key="$PROJECT_DIR$" value="testBranch" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="ROOT_SYNC" value="DONT_SYNC" />
-    <option name="UPDATE_TYPE" value="REBASE" />
-    <option name="WARN_ABOUT_DETACHED_HEAD" value="false" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="jar://$USER_HOME$/Java/Soft/jdk/jdk-11.0.10.jdk/Contents/Home/lib/src.zip!/java.base/java/nio/ByteBuffer.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -106,162 +343,38 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="$MAVEN_REPOSITORY$" />
-        <option name="userSettingsFile" value="$USER_HOME$/Java/Soft/apache-maven-3.6.3/conf/settings.xml" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../Soft/apache-maven-3.6.3" />
+        <option name="useMavenConfig" value="true" />
+        <option name="userSettingsFile" value="//Users/zed/Java/Soft/apache-maven-3.6.3/conf/settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="MavenRunner">
-    <option name="delegateBuildToMaven" value="true" />
-  </component>
-  <component name="ProjectId" id="1uetrOUWWXUVTQNeiro6rVKrUC1" />
+  <component name="ProjectId" id="1F8q2tCvDo5DSFKlSMXAmjZpxzc" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
-    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelOrder2" value="2" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="RequestMappingsPanelWidth2" value="75" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="TODO_SCOPE" value="All Places" />
-    <property name="ToolWindowDebug.ShowToolbar" value="false" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/resources/mapper" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="SDKs" />
-    <property name="project.structure.proportion" value="0.15429688" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/xxl-job-executor-samples" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.demo.ssm.controller" />
-      <recent name="com.demo.ssm.xxlJob" />
-      <recent name="com.demo.ssm.factory" />
-      <recent name="com.demo.ssm.entity" />
-      <recent name="com.demo.ssm.util" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/resources/mapper" />
-      <recent name="$PROJECT_DIR$/xxl-job-executor-samples/ssm/src/main/resources" />
-      <recent name="$PROJECT_DIR$/xxl-job-admin/src/main/resources" />
-      <recent name="$PROJECT_DIR$/xxl-job-executor-samples/sunflower/src/main/resources/static/view" />
-    </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="configurationTypes">
-      <set>
-        <option value="SpringBootApplicationConfigurationType" />
-      </set>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.testMain">
-    <configuration name="MapTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.test.MapTest" />
-      <module name="xxl-job-executor-sample-springboot" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NIOService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.test.Socket.NIOService" />
-      <module name="xxl-job-executor-sample-springboot" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.test.Socket.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SocketClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.test.Socket.SocketClient" />
-      <module name="xxl-job-executor-sample-springboot" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.test.Socket.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StreamDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.test2.StreamDemo" />
-      <module name="xxl-job-executor-sample-springboot" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.test2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.test2.testMain" />
-      <module name="xxl-job-executor-sample-springboot" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.test2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="xxl-job-executor-sample-springboot" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="xxl-job-executor-sample-springboot" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="sunflower" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sunflower.project.Application" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SsmApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="ssm" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.demo.ssm.SsmApplication" />
-      <option name="VM_PARAMETERS" value="-Djavax.net.debug=all" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/zed/Java/Project/IdeaWorkSpace/xxl-job",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.09872925",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "configurable.group.tools",
+    "spring.configuration.checksum": "5e2a1b191f92c123006905465e8e8dc2"
+  }
+}]]></component>
+  <component name="RunManager" selected="Spring Boot.XxlJobExecutorApplication">
     <configuration name="XxlJobAdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="xxl-job-admin" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.xxl.job.admin.XxlJobAdminApplication" />
@@ -270,135 +383,63 @@
       </method>
     </configuration>
     <configuration name="XxlJobExecutorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
       <module name="xxl-job-executor-sample-springboot" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.xxl.job.executor.XxlJobExecutorApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Application.testMain" />
-      <item itemvalue="Spring Boot.Application" />
-      <item itemvalue="Spring Boot.SsmApplication" />
-      <item itemvalue="Spring Boot.XxlJobAdminApplication" />
-      <item itemvalue="Spring Boot.XxlJobExecutorApplication" />
-      <item itemvalue="Application.StreamDemo" />
-      <item itemvalue="Application.SocketClient" />
-      <item itemvalue="Application.NIOService" />
-      <item itemvalue="Application.MapTest" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.MapTest" />
-        <item itemvalue="Application.NIOService" />
-        <item itemvalue="Application.SocketClient" />
-        <item itemvalue="Application.StreamDemo" />
-        <item itemvalue="Application.testMain" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="SpringBeansView">
-    <option name="showInfrastructureBeans" value="false" />
-  </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="27f6e29b-9c8c-4e42-a30a-867866b5e7be" name="Default Changelist" comment="" />
-      <changelist id="03a2168b-d143-4961-bfde-16c33f967433" name="不提交" comment="不提交的代码" />
-      <created>1625038080733</created>
+      <changelist id="b4d9b10d-eb67-4964-adeb-0606a5a2d83b" name="Changes" comment="" />
+      <created>1546300878985</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1625038080733</updated>
-      <workItem from="1625038087207" duration="8232000" />
-      <workItem from="1625208700757" duration="12725000" />
-      <workItem from="1626072242501" duration="5180000" />
-      <workItem from="1626145342758" duration="15881000" />
-      <workItem from="1626340381932" duration="22367000" />
-      <workItem from="1626766255926" duration="1329000" />
-      <workItem from="1626767693411" duration="25999000" />
-      <workItem from="1627010699390" duration="4434000" />
-      <workItem from="1627451537006" duration="2799000" />
-      <workItem from="1635495181902" duration="283000" />
-      <workItem from="1640153157714" duration="43000" />
-      <workItem from="1642142232717" duration="10123000" />
-      <workItem from="1642155587601" duration="6894000" />
-      <workItem from="1642401696134" duration="43356000" />
-      <workItem from="1644819737143" duration="2109000" />
-      <workItem from="1645167423526" duration="16892000" />
-      <workItem from="1646204415917" duration="1714000" />
-      <workItem from="1646620010294" duration="8672000" />
+      <updated>1546300878985</updated>
+      <workItem from="1657177021893" duration="655000" />
+      <workItem from="1658475160757" duration="1640000" />
+      <workItem from="1658487599060" duration="351000" />
+      <workItem from="1658487968265" duration="119000" />
+      <workItem from="1658488099576" duration="90000" />
+      <workItem from="1658488268311" duration="1007000" />
+      <workItem from="1658489293332" duration="2697000" />
+      <workItem from="1660893453959" duration="3068000" />
+      <workItem from="1660903159579" duration="15972000" />
+      <workItem from="1661496301218" duration="1904000" />
     </task>
-    <task id="LOCAL-00001" summary="init">
-      <created>1626088759756</created>
+    <task id="LOCAL-00001" summary="commit .gitignore">
+      <created>1661497250134</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1626088759756</updated>
+      <updated>1661497250134</updated>
     </task>
-    <task id="LOCAL-00002" summary="init">
-      <created>1626174644959</created>
+    <task id="LOCAL-00002" summary="commit .gitignore">
+      <created>1661498229217</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1626174644959</updated>
+      <updated>1661498229217</updated>
     </task>
-    <task id="LOCAL-00003" summary="init">
-      <created>1626427987653</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1626427987653</updated>
-    </task>
-    <task id="LOCAL-00004" summary="init">
-      <created>1626691926072</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1626691926072</updated>
-    </task>
-    <task id="LOCAL-00005" summary="init">
-      <created>1626863578926</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1626863578926</updated>
-    </task>
-    <task id="LOCAL-00006" summary="init">
-      <created>1642142496787</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1642142496787</updated>
-    </task>
-    <task id="LOCAL-00007" summary="xxljob mysql转换oracle脚本及mybatis配置文件修改">
-      <created>1642157522772</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1642157522772</updated>
-    </task>
-    <task id="LOCAL-00008" summary="xxljob mysql转换oracle脚本及mybatis配置文件修改">
-      <created>1642401761283</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1642401761283</updated>
-    </task>
-    <task id="LOCAL-00009" summary="xxljob mysql转换oracle脚本及mybatis配置文件修改">
-      <created>1642405476731</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1642405476731</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -408,28 +449,41 @@
             <State />
           </value>
         </entry>
+        <entry key="c304d4d3-0aeb-4542-8c0e-3bf669bf5dfc">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:/Users/zed/Java/Project/IdeaWorkSpace/xxl-job/xxl-job-admin/src/main/resources/mybatis-mapper" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="c304d4d3-0aeb-4542-8c0e-3bf669bf5dfc" value="TOOL_WINDOW" />
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="init" />
-    <MESSAGE value="xxljob mysql转换oracle脚本及mybatis配置文件修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="xxljob mysql转换oracle脚本及mybatis配置文件修改" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/java/com/test/HashTest.java</url>
-          <line>55</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-    <pin-to-top-manager>
-      <pinned-members>
-        <PinnedItemInfo />
-      </pinned-members>
-    </pin-to-top-manager>
+    <MESSAGE value="commit .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit .gitignore" />
   </component>
 </project>

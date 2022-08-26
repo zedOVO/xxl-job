@@ -4,7 +4,7 @@
 <mapper namespace="com.xxl.job.admin.dao.XxlJobGroupDao">
 	
 	<resultMap id="XxlJobGroup" type="com.xxl.job.admin.core.model.XxlJobGroup" >
-		<result column="id" property="id"  />
+		<result column="id" property="id" />
 	    <result column="app_name" property="appname" />
 	    <result column="title" property="title" />
 		<result column="address_type" property="addressType" />
@@ -23,32 +23,29 @@
 
 	<select id="findAll" resultMap="XxlJobGroup">
 		SELECT <include refid="Base_Column_List" />
-		FROM xxl_job_group  t
+		FROM xxl_job_group AS t
 		ORDER BY t.app_name, t.title, t.id ASC
 	</select>
 
 	<select id="findByAddressType" parameterType="java.lang.Integer" resultMap="XxlJobGroup">
 		SELECT <include refid="Base_Column_List" />
-		FROM xxl_job_group  t
+		FROM xxl_job_group AS t
 		WHERE t.address_type = #{addressType}
 		ORDER BY t.app_name, t.title, t.id ASC
 	</select>
 
 	<insert id="save" parameterType="com.xxl.job.admin.core.model.XxlJobGroup" useGeneratedKeys="true" keyProperty="id" >
-		<selectKey keyProperty="id" resultType="int" order="BEFORE">
-			select XXL_JOB_GROUP_ID.nextval  id from dual
-		</selectKey>
-		INSERT INTO xxl_job_group ( id,app_name, title,group_order, address_type, address_list, update_time)
-		values (#{id}, #{appname}, #{title},#{id}, #{addressType}, #{addressList}, #{updateTime,jdbcType=DATE} )
+		INSERT INTO xxl_job_group ( `app_name`, `title`, `address_type`, `address_list`, `update_time`)
+		values ( #{appname}, #{title}, #{addressType}, #{addressList}, #{updateTime} );
 	</insert>
 
 	<update id="update" parameterType="com.xxl.job.admin.core.model.XxlJobGroup" >
 		UPDATE xxl_job_group
-		SET app_name = #{appname},
-			title = #{title},
-			address_type = #{addressType},
-			address_list = #{addressList,jdbcType=VARCHAR},
-			update_time = #{updateTime}
+		SET `app_name` = #{appname},
+			`title` = #{title},
+			`address_type` = #{addressType},
+			`address_list` = #{addressList},
+			`update_time` = #{updateTime}
 		WHERE id = #{id}
 	</update>
 
@@ -59,13 +56,13 @@
 
 	<select id="load" parameterType="java.lang.Integer" resultMap="XxlJobGroup">
 		SELECT <include refid="Base_Column_List" />
-		FROM xxl_job_group  t
+		FROM xxl_job_group AS t
 		WHERE t.id = #{id}
 	</select>
 
 	<select id="pageList" parameterType="java.util.HashMap" resultMap="XxlJobGroup">
 		SELECT <include refid="Base_Column_List" />
-		FROM xxl_job_group  t
+		FROM xxl_job_group AS t
 		<trim prefix="WHERE" prefixOverrides="AND | OR" >
 			<if test="appname != null and appname != ''">
 				AND t.app_name like CONCAT(CONCAT('%', #{appname}), '%')
@@ -73,19 +70,14 @@
 			<if test="title != null and title != ''">
 				AND t.title like CONCAT(CONCAT('%', #{title}), '%')
 			</if>
-			<if test="pagesize gt -1">
-				AND rownum <![CDATA[ <= ]]> #{pagesize}
-			</if>
-			<if test="offset != '' and offset != null">
-				AND rownum <![CDATA[ >= ]]> #{offset}
-			</if>
 		</trim>
 		ORDER BY t.app_name, t.title, t.id ASC
+		LIMIT #{offset}, #{pagesize}
 	</select>
 
 	<select id="pageListCount" parameterType="java.util.HashMap" resultType="int">
 		SELECT count(1)
-		FROM xxl_job_group  t
+		FROM xxl_job_group AS t
 		<trim prefix="WHERE" prefixOverrides="AND | OR" >
 			<if test="appname != null and appname != ''">
 				AND t.app_name like CONCAT(CONCAT('%', #{appname}), '%')

@@ -2,32 +2,21 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
-      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="sunflower" />
-        <module name="xxl-job-executor-sample-springboot" />
-        <module name="xxl-job-executor-sample-frameless" />
         <module name="xxl-job-core" />
+        <module name="xxl-job-executor-sample-springboot" />
         <module name="xxl-job-admin" />
+        <module name="xxl-job-executor-sample-frameless" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="ssm" target="11" />
-      <module name="sunflower" target="11" />
-      <module name="xxl-job" target="1.8" />
       <module name="xxl-job-admin" target="1.8" />
       <module name="xxl-job-core" target="1.8" />
       <module name="xxl-job-executor-sample-frameless" target="1.8" />
       <module name="xxl-job-executor-sample-springboot" target="1.8" />
-      <module name="xxl-job-executor-samples" target="1.8" />
     </bytecodeTargetLevel>
-  </component>
-  <component name="JavacSettings">
-    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="ssm" options="-parameters" />
-    </option>
   </component>
 </project>

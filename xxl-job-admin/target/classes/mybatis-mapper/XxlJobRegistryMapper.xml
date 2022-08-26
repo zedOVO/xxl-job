@@ -21,8 +21,8 @@
 
 	<select id="findDead" parameterType="java.util.HashMap" resultType="java.lang.Integer" >
 		SELECT t.id
-		FROM xxl_job_registry  t
-		WHERE t.update_time <![CDATA[ < ]]> (#{nowTime}-1/(24*60*60)*#{timeout})
+		FROM xxl_job_registry AS t
+		WHERE t.update_time <![CDATA[ < ]]> DATE_ADD(#{nowTime},INTERVAL -#{timeout} SECOND)
 	</select>
 	
 	<delete id="removeDead" parameterType="java.lang.Integer" >
@@ -35,24 +35,21 @@
 
 	<select id="findAll" parameterType="java.util.HashMap" resultMap="XxlJobRegistry">
 		SELECT <include refid="Base_Column_List" />
-		FROM xxl_job_registry  t
-		WHERE t.update_time <![CDATA[ > ]]> (#{nowTime}-1/(24*60*60)*#{timeout})
+		FROM xxl_job_registry AS t
+		WHERE t.update_time <![CDATA[ > ]]> DATE_ADD(#{nowTime},INTERVAL -#{timeout} SECOND)
 	</select>
 
     <update id="registryUpdate" >
         UPDATE xxl_job_registry
-        SET update_time = #{updateTime}
-        WHERE registry_group = #{registryGroup}
-          AND registry_key = #{registryKey}
-          AND registry_value = #{registryValue}
+        SET `update_time` = #{updateTime}
+        WHERE `registry_group` = #{registryGroup}
+          AND `registry_key` = #{registryKey}
+          AND `registry_value` = #{registryValue}
     </update>
 
-    <insert id="registrySave" useGeneratedKeys="true" keyProperty="id" >
-		<selectKey keyProperty="id" resultType="int" order="BEFORE">
-			select XXL_JOB_REGISTRY_ID.nextval  id from dual
-		</selectKey>
-        INSERT INTO xxl_job_registry( id ,registry_group , registry_key , registry_value, update_time)
-        VALUES( #{id}  , #{registryGroup}  , #{registryKey} , #{registryValue}, #{updateTime})
+    <insert id="registrySave" >
+        INSERT INTO xxl_job_registry( `registry_group` , `registry_key` , `registry_value`, `update_time`)
+        VALUES( #{registryGroup}  , #{registryKey} , #{registryValue}, #{updateTime})
     </insert>
 
 	<delete id="registryDelete" >

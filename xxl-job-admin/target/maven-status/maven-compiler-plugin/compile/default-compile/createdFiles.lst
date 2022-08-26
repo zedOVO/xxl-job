@@ -69,6 +69,7 @@ com/xxl/job/admin/core/util/FtlUtil.class
 com/xxl/job/admin/core/alarm/impl/EmailJobAlarm.class
 com/xxl/job/admin/core/thread/JobRegistryHelper$3.class
 com/xxl/job/admin/core/util/LocalCacheUtil$LocalCacheData.class
+com/xxl/job/admin/test/Digest.class
 com/xxl/job/admin/controller/JobGroupController.class
 com/xxl/job/admin/core/util/I18nUtil.class
 com/xxl/job/admin/core/cron/CronExpression.class
